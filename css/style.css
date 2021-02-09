@@ -156,7 +156,7 @@ nav .icon-burger .line {
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: rgba(0, 68, 255, 0.63);
+		background-color: rgba(255, 255, 255, 0.945);
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
@@ -196,6 +196,11 @@ nav .icon-burger .line {
 	}
 	.header-content{
 		margin-top: 0px;
+	}
+	.heading{
+		font-weight: 700;
+		font-size: 30px;
+		color: #EF4B79;
 	}
 	
 }
