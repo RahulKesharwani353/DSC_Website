@@ -8,6 +8,13 @@ body {
 	position: relative;
 	margin-top: 100px;
 }
+.inner-container {
+	position: relative;
+	padding-right: 8%;
+	padding-left: 8%;
+	margin-top: -90px;
+}
+
 .containers img {
 	display: block;
 	width: 100%;
@@ -22,6 +29,8 @@ nav {
 	font-family: 'Montserrat', sans-serif;
 	padding: 0 5%;
 	height: 100px;
+	box-shadow: 0px 0px 3px rgb(0, 60, 255);
+    
 	background-color: #ffffff;
 }
 nav .logo {
@@ -118,7 +127,13 @@ nav .icon-burger .line {
 }
 .header-content h1{
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 800;
+	font-weight: 700;
+}
+
+.heading{
+	font-weight: 700;
+	font-size: 50px;
+	color: #EF4B79;
 }
 
 /* ================REsponsive********************* */
