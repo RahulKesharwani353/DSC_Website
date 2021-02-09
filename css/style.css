@@ -99,10 +99,11 @@ nav .icon-burger .line {
 .clipart {
     /* background:url(../images/home-clip.png); */
 	
-	width: 500px;
-		height: 500px;
+		width: 400px;
+		height: 400px;
 		margin-left: 50px;
 		object-fit: contain;
+	
 }
 
 .parallax-window {
@@ -172,11 +173,10 @@ nav .icon-burger .line {
 		
     }
 	.clipart{
-		margin-top: 50px;
 		margin-left: 0px;
-		margin-bottom: 60px;
-		width: 300px;
-		height: 280px;
+		margin-bottom: 40px;
+		width: 250px;
+		height: 250px;
 		object-fit: contain;
 	}
 	.header-content{
