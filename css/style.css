@@ -8,6 +8,13 @@ body {
 	position: relative;
 	margin-top: 100px;
 }
+.inner-container {
+	position: relative;
+	padding-right: 8%;
+	padding-left: 8%;
+	margin-top: -90px;
+}
+
 .containers img {
 	display: block;
 	width: 100%;
@@ -22,6 +29,8 @@ nav {
 	font-family: 'Montserrat', sans-serif;
 	padding: 0 5%;
 	height: 100px;
+	box-shadow: 0px 0px 3px rgb(0, 60, 255);
+    
 	background-color: #ffffff;
 }
 nav .logo {
@@ -118,7 +127,13 @@ nav .icon-burger .line {
 }
 .header-content h1{
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 800;
+	font-weight: 700;
+}
+
+.heading{
+	font-weight: 700;
+	font-size: 50px;
+	color: #EF4B79;
 }
 
 /* ================REsponsive********************* */
@@ -141,7 +156,7 @@ nav .icon-burger .line {
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: rgba(0, 68, 255, 0.63);
+		background-color: rgba(255, 255, 255, 0.945);
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
@@ -181,6 +196,11 @@ nav .icon-burger .line {
 	}
 	.header-content{
 		margin-top: 0px;
+	}
+	.heading{
+		font-weight: 700;
+		font-size: 30px;
+		color: #EF4B79;
 	}
 	
 }
