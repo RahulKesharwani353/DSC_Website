@@ -13,7 +13,7 @@ body {
 }
 .containers {
 	position: relative;
-	margin-top: 70px;
+	margin-top: 65px;
 }
 .inner-container {
 	position: relative;
@@ -35,11 +35,10 @@ nav {
 	top: 0;
 	font-family: 'Montserrat', sans-serif;
 	padding: 0 5%;
-	height: 70px;
-	box-shadow: 0px 0px 3px rgb(0, 60, 255);
-    
+	height: 65px;
 	background-color: #ffffff;
 }
+
 nav .logo {
 	float: left;
 	width: 40%;
@@ -69,10 +68,15 @@ nav .links li {
 nav .links a {
 	display: block;
 	padding: 1em;
-	font-size: 16px;
-	font-weight: bold;
+	font-size: 14px;
+	font-weight: bolder ;
 	color: rgb(0, 0, 0);
 	text-decoration: none;
+}
+
+nav .links a:hover {
+	color: #EF4978;
+	transition: .3s;
 }
 #nav-toggle {
 	position: absolute;
@@ -135,6 +139,16 @@ nav .icon-burger .line {
 	font-size: 50px;
 	color: #EF4B79;
 }
+
+.join-us{
+	border-radius: 40px;
+	font-weight: bold;
+	padding: .7em 2em;
+	background: rgb(239,75,121);
+background: linear-gradient(242deg, rgba(239,75,121,1) 0%, rgba(255,145,176,1) 100%);
+border: none;
+}
+
 
 /* ================REsponsive********************* */
 
