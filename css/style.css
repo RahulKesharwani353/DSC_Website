@@ -139,6 +139,27 @@ nav .icon-burger .line {
 	font-size: 50px;
 	color: #EF4B79;
 }
+/*=========================home about===================*/
+.about{
+	width: 100%;
+	height: max-content;
+	border-radius: 25px;
+	background: url(../images/home-abou-bg-lines.png) no-repeat 50% 50%;
+	background-size: cover;
+}
+.about a{
+	color: #EF4B79;
+	font-weight: normal;
+	font-size: 20px;
+}
+.mob{
+	display: none;
+}
+.large{
+	display: block;
+	padding: 40px;
+}
+
 
 .join-us{
 	border-radius: 40px;
@@ -216,5 +237,20 @@ border: none;
 		font-size: 30px;
 		color: #EF4B79;
 	}
+	.about{
+		width: 100%;
+		height: max-content;
+		border-radius: 25px;
+		background: url(../images/home-about-bg.png) no-repeat 50% 50%;
+	}
+	
+	.mob{
+		display: block;
+		padding: 40px;
+	}
+	.large{
+		display: none;
+	}
+	
 	
 }
