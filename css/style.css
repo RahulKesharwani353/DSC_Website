@@ -128,10 +128,13 @@ nav .icon-burger .line {
 }
 .header-content{
 	margin-top: 150px;
+	font-size: 50px;
+	font-weight: 700;
+	justify-content: left;
 }
 .header-content h1{
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
+	justify-content: left;
 }
 
 .heading{
@@ -139,6 +142,13 @@ nav .icon-burger .line {
 	font-size: 50px;
 	color: #EF4B79;
 }
+.sub-heading{
+	font-weight: 500;
+	font-size: 36px;
+	color: #EF4B79;
+	
+}
+
 /*=========================home about===================*/
 .about{
 	width: 100%;
@@ -177,6 +187,64 @@ background: linear-gradient(242deg, rgba(239,75,121,1) 0%, rgba(255,145,176,1) 1
 border: none;
 }
 
+
+/*=================CARD+++++++++++++++++++++++++++++++*/
+.main{
+
+	margin: 2%;
+   }
+   
+   .card{
+		width: 80%;
+		height: auto;
+		display: inline-block;
+		box-shadow: 1px 1px 10px black;
+		border-radius: 5px; 
+		margin: 2%;
+	   }
+   
+   .image img{
+	 width: 100%;
+	 height: auto;
+	 border-top-right-radius: 5px;
+	 border-top-left-radius: 5px;
+	}
+   
+   .title{
+	
+	 text-align: center;
+	 padding: 10px;
+	 
+	}
+   
+   h1{
+	 font-size: 20px;
+	}
+   
+   .des{
+	 padding: 3px;
+	 text-align: center;
+	
+	 padding-top: 10px;
+		   border-bottom-right-radius: 5px;
+	 border-bottom-left-radius: 5px;
+   }
+   button{
+	 margin-top: 40px;
+	 margin-bottom: 10px;
+	 background-color: white;
+	 border: 1px solid black;
+	 border-radius: 5px;
+	 padding:10px;
+   }
+   button:hover{
+	 background-color: black;
+	 color: white;
+	 transition: .5s;
+	 cursor: pointer;
+   }
+
+   
 
 /* ================REsponsive********************* */
 
@@ -236,6 +304,19 @@ border: none;
 		height: 250px;
 		object-fit: contain;
 	}
+
+	.header-content{
+		margin-top: 150px;
+		font-size: 30px;
+		font-weight: 700;
+		text-align: center;
+	}
+	.header-content h1{
+		font-family: 'Montserrat', sans-serif;
+		justify-content: center;
+		text-align: center;
+	}
+
 	.header-content{
 		margin-top: 0px;
 	}
@@ -260,5 +341,13 @@ border: none;
 		display: none;
 	}
 	
-	
+	.card{
+		width: 80%;
+		height: auto;
+		display: inline-block;
+		box-shadow: 0px 0px 10px black;
+		border-radius: 5px; 
+		margin: 2%;
+	   }
+   
 }
