@@ -30,8 +30,6 @@ body {
 .containers p{
 	font-size: 25px;
 	font-weight: 500;
-	margin-left: 10%;
-	margin-right: 15%;
 }
 /*========================NAv BAr=============*/
 nav {
@@ -172,8 +170,9 @@ nav .icon-burger .line {
 	background: url(../images/home-abou-bg-lines.png) no-repeat 50% 50%;
 	background-size: cover;
 }
-.about p{
+p.about{
 	font-size: 25px;
+	margin-left: 0%;
 }
 .about a{
 	color: #EF4B79;
