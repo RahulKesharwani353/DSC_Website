@@ -481,6 +481,9 @@ border: none;
 footer {
 	color: grey;
 }
+footer .button-social{
+	color:#111;
+}
 
 footer p,
 a {
@@ -497,7 +500,7 @@ footer h6 {
 footer h6:after {
 	position: absolute;
 	content: "";
-	background: grey;
+	background: rgb(255, 255, 255);
 	width: 12%;
 	height: 1px;
 	left: 0;
@@ -529,6 +532,67 @@ a.footer :hover {
 .logo-part {
 	border-right: 1px solid grey;
 	height: 100%;
+}
+
+.wrapper .button-social {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	float: left;
+	margin: 0 3px;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-out;
+}
+
+
+
+.wrapper .button-social .icon {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	border-radius: 25px;
+	box-sizing: border-box;
+	line-height: 30px;
+	transition: all 0.3s ease-out;
+	
+}
+
+.wrapper .button-social:nth-child(1):hover .icon {
+	background: #4267B2;
+	border: none;
+}
+
+.wrapper .button-social:nth-child(2):hover .icon {
+	background: #1DA1F2;
+}
+
+.wrapper .button-social:nth-child(3):hover .icon {
+	background: #E1306C;
+}
+
+
+
+.wrapper .button-social:nth-child(4):hover .icon {
+	background: #ff0000;
+}
+
+.wrapper .button-social:nth-child(4):hover .icon {
+	background: #ff0000;
+}
+
+.wrapper .button-social:nth-child(5):hover .icon {
+	background: #0072b1;
+}
+
+
+
+.wrapper .button-social:hover .icon i {
+	color: #fff;
 }
 /*-----------footer end -------*/
 
