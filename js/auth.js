@@ -1,37 +1,6 @@
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      // User is signed in.
-  
-      
-      var user = firebase.auth().currentUser;
-  
-      if(user != null){
-          window.location.href = "profile.html"
-      }
-  
-    } else {
-      // No user is signed in.
-      
-    }
-  });
-  
+
   function login(){
-  
-    var userEmail = document.getElementById("email_field").value;
-    var userPass = document.getElementById("password_field").value;
-      firebase.auth().signInWithEmailAndPassword(userEmail, userPass)
-  .then((userCredential) => {
-    // Signed in
-    var user = userCredential.user;
-    // window.location.href = "profile.html";
-    // ...
-  })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    alert("ERROR: "+ errorMessage);
-  });
-  
+    
   }
   
   function logout(){
@@ -42,4 +11,16 @@ firebase.auth().onAuthStateChanged(function(user) {
         // An error happened.
       });
   }
+  document.getElementById("signIn").onclick = function () {
+    var userEmail = document.getElementById("signInEmail").value;
+    var userPass = document.getElementById("signInPassword").value;
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(userEmail, userPass)
+      .catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        alert("ERROR: " + errorMessage);
+      })
+  };
   
