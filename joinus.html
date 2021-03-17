@@ -222,15 +222,16 @@
       var user = firebase.auth().currentUser;
       // var UID = firebase.auth().currentUser.uid;
       if(user != null){
-        // if(check==1){
+        if(check==1){
         //   var database = firebase.database();
         // firebase.database().ref("members/").set({
         //   email: email,
         //   password: password,
         //   gender: gn,
         // });
-        // }
-          window.location.href = "profile.html"
+        window.location.href = "newdetail.html";
+        }else
+          window.location.href = "profile.html";
       }
   
     } else {
