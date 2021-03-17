@@ -52,7 +52,7 @@
               <ul id="progressbar">
                 <li class="active" id="personal"><strong>Personal</strong></li>
                 <li id="account"><strong>Academics</strong></li>
-                <li id="payment"><strong>Image</strong></li>
+                <li id="payment"><strong>Social Detail</strong></li>
                 <li id="confirm"><strong>Finish</strong></li>
               </ul>
               <div class="progress">
@@ -153,8 +153,18 @@
                       <h2 class="steps">Step 3 - 4</h2>
                     </div>
                   </div>
-                  <label class="fieldlabels">Upload Your Photo:(optional)</label>
-                  <input type="file" name="pic" accept="image/*" />
+                  <label class="fieldlabels">Skills *</label>
+                  <input type="text" id="skill" placeholder="(JAVA, C++, Python...etc)" required/>
+                  <label class="fieldlabels">Bio *</label>
+                  <input type="text" id="bio" placeholder="About" required />
+                  <label class="fieldlabels">Github Profile *</label>
+                  <input type="url" id="github" placeholder="URL" required/>
+                  <label class="fieldlabels">LinkedIn Profile *</label>
+                  <input type="url" id="LinkedIn" placeholder="URL" required />
+                  <label class="fieldlabels">Discord UserName *</label>
+                  <input type="url" id="discord" placeholder="username#code (ex: User_name#4566)" required/>
+                  <label class="fieldlabels">Twitter Profile</label>
+                  <input type="url" id="Twitter" placeholder="URL (optional)" />
                 </div>
                 <input
                   type="button"

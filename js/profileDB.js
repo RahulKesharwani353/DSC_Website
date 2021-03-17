@@ -8,8 +8,15 @@ document.getElementById("submit_btn").onclick = function(){
     var branch = document.getElementById("branch").value;
     var colle = document.getElementById("college").value;
     var passYr = document.getElementById("passYear").value;
+    var skill = document.getElementById("skill").value;
+    var bio = document.getElementById("bio").value;
+    var github = document.getElementById("github").value;
+    var LinkedIn = document.getElementById("LinkedIn").value;
+    var discord = document.getElementById("discord").value;
+    var Twitter = document.getElementById("Twitter").value;
    
-    if(fName==""||lName==""||phn==""||course==""||branch==""||colle==""||passYr==""){
+    if(fName==""||lName==""||phn==""||course==""||branch==""||colle==""||passYr==""
+    ||skill==""||bio==""||github==""||LinkedIn==""||discord==""){
       alert("Enter All The Required Details");
       location.reload();
     }
@@ -27,7 +34,13 @@ document.getElementById("submit_btn").onclick = function(){
         branch: branch,
         college: colle,
         passYear: passYr,
-        UID: UID
+        UID: UID,
+        skill: skill,
+        bio: bio,
+        github: github,
+        linkedIn: LinkedIn,
+        discord: discord,
+        twitter: Twitter
 
       }).then(() => {
         alert("Welcome");
