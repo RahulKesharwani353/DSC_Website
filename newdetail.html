@@ -23,8 +23,11 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script> 
+
     <script src="./js/firebaseConfig.js"></script>
 
     <link
@@ -48,7 +51,7 @@
               <!-- progressbar -->
               <ul id="progressbar">
                 <li class="active" id="personal"><strong>Personal</strong></li>
-                <li id="account"><strong>Acadamics</strong></li>
+                <li id="account"><strong>Academics</strong></li>
                 <li id="payment"><strong>Image</strong></li>
                 <li id="confirm"><strong>Finish</strong></li>
               </ul>
@@ -73,16 +76,17 @@
                       </div>
                     </div>
                     <label class="fieldlabels">First Name: *</label>
-                    <input type="text" name="fname" placeholder="First Name" />
+                    <input type="text" id="fname" placeholder="First Name" />
                     <label class="fieldlabels">Last Name: *</label>
-                    <input type="text" name="lname" placeholder="Last Name" />
+                    <input type="text" id="lname" placeholder="Last Name" />
                     <label class="fieldlabels">Contact No.: *</label>
-                    <input type="text" name="phno" placeholder="Contact No." />
+                    <input type="tel" maxlength="10" id="phno" placeholder="Contact No." />
                     <label class="fieldlabels">Alternate Contact No.: </label>
                     <input
-                      type="text"
-                      name="phno_2"
-                      placeholder="Alternate Contact No."
+                    type="tel"
+                    maxlength="10"
+                      id="phno_2"
+                      placeholder="(optional)."
                     />
                   </div>
                 
@@ -105,11 +109,11 @@
                       </div>
                     </div>
                     <label class="fieldlabels">Course *</label>
-                    <input type="text" name="course" placeholder="(B.tech/B.E/BCA...)" />
+                    <input type="text" id="course" placeholder="(B.tech/B.E/BCA...)" required/>
                     <label class="fieldlabels">Field: *</label>
-                    <input type="text" name="branch" placeholder="(CSE/IT/Mech...)" />
+                    <input type="text" id="branch" placeholder="(CSE/IT/Mech...)" />
                     <label class="fieldlabels">College: *</label>
-                    <input type="text" name="college" placeholder="College" />
+                    <input type="text" id="college" placeholder="College" />
                     <label class="fieldlabels">Passing Year: *</label>
                     <select id="passYear" name="passYear">
                         <option value="">Select Year</option>
@@ -149,14 +153,15 @@
                       <h2 class="steps">Step 3 - 4</h2>
                     </div>
                   </div>
-                  <label class="fieldlabels">Upload Your Photo:</label>
+                  <label class="fieldlabels">Upload Your Photo:(optional)</label>
                   <input type="file" name="pic" accept="image/*" />
                 </div>
                 <input
                   type="button"
                   name="next"
-                  class="next action-button"
+                  class="submit next action-button"
                   value="Submit"
+                  id="submit_btn"
                 />
                 <input
                   type="button"
@@ -180,9 +185,8 @@
                     <strong>SUCCESS !</strong>
                   </h2>
                   <br />
-                  <div class="row justify-content-center">
+                  <div class="row justify-content-center">Please Wait While Redirecting!!! Do Not Refresh The Page!!!
                   </div>
-                  <br /><br />
                   <div class="row justify-content-center">
                     <div class="col-7 text-center">
                       <h5 class="purple-text text-center">
@@ -200,6 +204,18 @@
 
     <!-- ====================Scripts================= -->
     <script src="js/form.js"></script>
+    <script>
+        firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+      var user = firebase.auth().currentUser;
+    } else {
+      // No user is signed in.
+      window.location.href = "joinus.html";
+    }
+  });
+    </script>
+    <script src="./js/profileDB.js"></script>
 
     <script src="./js/bootstrap.js"></script>
     <script src="./js/bootstrap.min.js"></script>
