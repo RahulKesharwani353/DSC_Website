@@ -79,6 +79,14 @@
                     <input type="text" id="fname" placeholder="First Name" />
                     <label class="fieldlabels">Last Name: *</label>
                     <input type="text" id="lname" placeholder="Last Name" />
+                    <label class="fieldlabels">Gender: *</label>
+                    <select id="gender" name="gender">
+                      <option value="">Select Gender</option>
+                      <option value="male">male</option>
+                      <option value="female">female</option>
+                      <option value="others">others</option>
+                  </select>
+                  <br>
                     <label class="fieldlabels">Contact No.: *</label>
                     <input type="tel" maxlength="10" id="phno" placeholder="Contact No." />
                     <label class="fieldlabels">Alternate Contact No.: </label>
@@ -88,6 +96,8 @@
                       id="phno_2"
                       placeholder="(optional)."
                     />
+                    <label class="fieldlabels">Country: *</label>
+                  <input type="text" id="country" placeholder="Country" />
                   </div>
                 
                 <input
@@ -112,7 +122,7 @@
                     <input type="text" id="course" placeholder="(B.tech/B.E/BCA...)" required/>
                     <label class="fieldlabels">Field: *</label>
                     <input type="text" id="branch" placeholder="(CSE/IT/Mech...)" />
-                    <label class="fieldlabels">College: *</label>
+                    <label class="fieldlabels">College / School: *</label>
                     <input type="text" id="college" placeholder="College" />
                     <label class="fieldlabels">Passing Year: *</label>
                     <select id="passYear" name="passYear">
@@ -158,13 +168,14 @@
                   <label class="fieldlabels">Bio *</label>
                   <input type="text" id="bio" placeholder="About" required />
                   <label class="fieldlabels">Github Profile *</label>
-                  <input type="url" id="github" placeholder="URL" required/>
+                  <input type="text" id="github" placeholder="Github Username" required/>
                   <label class="fieldlabels">LinkedIn Profile *</label>
                   <input type="url" id="LinkedIn" placeholder="URL" required />
                   <label class="fieldlabels">Discord UserName *</label>
-                  <input type="url" id="discord" placeholder="username#code (ex: User_name#4566)" required/>
+                  <input type="text" id="discord" placeholder="username#code (ex: User_name#4566)" required/>
+                  <p>Be Sure To<a href="https://discord.gg/2swNB74rZU" target="_blank">Join Discord Server*</a></p>
                   <label class="fieldlabels">Twitter Profile</label>
-                  <input type="url" id="Twitter" placeholder="URL (optional)" />
+                  <input type="text" id="Twitter" placeholder="@username (optional)" />
                 </div>
                 <input
                   type="button"

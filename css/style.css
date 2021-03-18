@@ -157,7 +157,7 @@ nav .icon-burger .line {
 	position: relative;
 	top:1px;
 }
-.header-content h1{
+.header-content h4{
 	font-family: 'Montserrat', sans-serif;
 	justify-content: left;
 	position: relative;
@@ -227,7 +227,7 @@ top: 25px;
 
 
 /*=================CARD+++++++++++++++++++++++++++++++*/
-.main{
+/* .main{
 
 	margin: 2%;
    }
@@ -280,7 +280,7 @@ top: 25px;
 	 color: white;
 	 transition: .5s;
 	 cursor: pointer;
-   }
+   } */
 
    /****************FAQ**********************/
    .accordion {
@@ -803,7 +803,52 @@ input, button {
   }
   
 
+  /************************************************Profile*****************************************/
   
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
+}
 
 /* ================REsponsive********************* */
 
@@ -910,7 +955,7 @@ input, button {
 		display: none;
 	}
 	
-	.card{
+	/* .card{
 		width: 80%;
 		height: auto;
 		display: inline-block;
@@ -924,7 +969,7 @@ input, button {
 		align-items: center;
 		position: relative;
 		
-	}
+	} */
 	.join-header-content{
 		margin-left: 0%;
 		font-size: 50px;
