@@ -4,6 +4,7 @@ body {
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
 }
+
 .sections {
     padding-top: 100px;
     padding-bottom: 30px;
@@ -568,8 +569,17 @@ a.footer :hover {
 	background: #fff;
 	border-radius: 25px;
 	cursor: pointer;
-	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 10px 10px rgba(41, 41, 41, 0.1);
 	transition: all 0.3s ease-out;
+}
+.developes a {
+	font-size: 16px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+}
+ .developes a:hover{
+	color: #EF4B79 !important;
 }
 
 
@@ -582,6 +592,7 @@ a.footer :hover {
 	border-radius: 25px;
 	box-sizing: border-box;
 	line-height: 30px;
+	color: #2a2b2f;
 	transition: all 0.3s ease-out;
 	
 }
@@ -962,14 +973,14 @@ input, button {
 		box-shadow: 0px 0px 10px black;
 		border-radius: 5px; 
 		margin: 2%;
-	   }
+	   } */
 	   .banner-title{
 		font-weight: 600;
 		font-size: 90px;
 		align-items: center;
 		position: relative;
 		
-	} */
+	}
 	.join-header-content{
 		margin-left: 0%;
 		font-size: 50px;
