@@ -527,6 +527,7 @@ footer h6:after {
 	content: "";
 	background: rgb(255, 255, 255);
 	width: 12%;
+	background-position: right;
 	height: 1px;
 	left: 0;
 	bottom: -20px;
