@@ -366,8 +366,8 @@ a {
 	font-family: 'Heebo';
 	--bg-filter-opacity: 0.5;
 	background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
-	height: 20em;
-	width: 15em;
+	height: 380px;
+	width: 275px;
 	font-size: 1.5em;
 	color: white;
 	border-radius: 1em;
@@ -391,12 +391,12 @@ a {
 
 .card-help h1 {
 	margin: 0;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	line-height: 1.2em;
 }
 
 .card-help p {
-	font-size: 0.75em;
+	font-size: 0.65em;
 	font-family: 'Open Sans';
 	margin-top: 0.5em;
 	line-height: 2em;
