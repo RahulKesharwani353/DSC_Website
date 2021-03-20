@@ -366,8 +366,8 @@ a {
 	font-family: 'Heebo';
 	--bg-filter-opacity: 0.5;
 	background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
-	height: 20em;
-	width: 15em;
+	height: 380px;
+	width: 275px;
 	font-size: 1.5em;
 	color: white;
 	border-radius: 1em;
@@ -391,12 +391,12 @@ a {
 
 .card-help h1 {
 	margin: 0;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	line-height: 1.2em;
 }
 
 .card-help p {
-	font-size: 0.75em;
+	font-size: 0.65em;
 	font-family: 'Open Sans';
 	margin-top: 0.5em;
 	line-height: 2em;
@@ -731,7 +731,7 @@ width: 10%;
     margin: 15px 0 10px 0;
 }
 .our-team .post{
-    font-size: 18px;
+    font-size: 15px;
     color: #EF4B79;
 	font-weight: 600;
     text-transform: capitalize;
@@ -1114,6 +1114,155 @@ input, button {
     box-shadow: none!important;
 }
 
+/*----------special card----*/
+
+
+
+.card-container {
+    padding: 100px 0px;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+.profile-card-2 {
+    max-width: 300px;
+	height: 450px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.profile-card-2 img {
+    transition: all linear 0.25s;
+	/* width: 400px;
+	height: 400px;
+	position: relative;
+	 */
+	 width: 300px;
+	 height: 450px;
+}
+
+.profile-card-2 .profile-name {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-size: 30px;
+    color: #FFF;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+	font-size: 20px;
+    color: #FFF !important;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-username {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #FFF;
+    font-size: 13px;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons .fa {
+    margin: 5px;
+	color: rgba(239,75,121,1);
+	font-size: 30px;
+}
+
+
+.profile-card-2:hover img {
+    filter: grayscale(100%);
+}
+
+.profile-card-2:hover .profile-name {
+    bottom: 80px;
+}
+
+.profile-card-2:hover .profile-username {
+    bottom: 60px;
+}
+
+.profile-card-2:hover .profile-icons {
+    right: 40px;
+}
+.profile-card-2:hover .profile-icons .fa {
+    color: white;
+}
+.profile-icons .fa:hover{
+	color: rgb(211, 21, 21) !important;
+}
+
+
+
+/*---------------------------------------------------------EVENTS PAGE----------------------------------*/
+
+.courses-container{
+	align-self: center;
+}
+.course {
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 550px;
+	height: 200px;
+}
+
+.course h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+.course-preview {
+	background-image: url("../images/dsc-logo.svg");
+	background-size: cover;
+
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+	color: #fff;
+	padding: 30px;
+	width: 250px;
+	height: 200px;
+	 border-radius: 15px;
+}
+/* 
+.course-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+} */
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
 /* ================REsponsive********************* */
 
 @media screen and (max-width: 768px) {
@@ -1241,5 +1390,41 @@ input, button {
 		justify-content: center;
 		text-align: center;
 	}
+.courses-container{
+	max-width: 350px;
+}
+	
+.course {
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 350px;
+	height: 150px;
+}
+
+.course h6 {
+	font-size: 10px;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+	font-size: 20px;
+}
+.course h5{
+	font-size: 15px;
+}
+.course-preview {
+	background-color: #2A265F;
+	color: #fff;
+	padding: 30px;
+	width: 250px;
+	height: 150px;
+	 border-radius: 15px;
+}
    
 }
