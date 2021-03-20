@@ -600,10 +600,10 @@ a {
 
 .marquee--inner {
 	display: block;
-	width: 200%;
+	width: max-content;
 	margin: 70px 0;
 	position: absolute;
-	animation: marquee 20s linear infinite;
+	animation: marquee 30s linear infinite;
 }
 
 .marquee--inner:hover {
@@ -1243,7 +1243,7 @@ input, button {
 	/* background-size: cover; */
 	color: #fff;
 	padding: 30px;
-	width: 250px;
+	width: 300px;
 	height: 200px;
 	 border-radius: 15px;
 }
@@ -1261,6 +1261,26 @@ input, button {
 	padding: 30px;
 	position: relative;
 	width: 100%;
+}
+
+.course-btn {
+	background-color: #0072b1;
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 25px;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	letter-spacing: 1px;
+}
+.course-btn:hover{
+	color: #0072b1;
+	background-color: white;
+	border-color: #0072b1;
+	border-width: 10px;
 }
 
 /* ================REsponsive********************* */
@@ -1425,6 +1445,15 @@ input, button {
 	width: 250px;
 	height: 150px;
 	 border-radius: 15px;
+}
+@keyframes marquee {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: -300%;
+	}
 }
    
 }
