@@ -1206,7 +1206,62 @@ input, button {
 
 
 
+/*---------------------------------------------------------EVENTS PAGE----------------------------------*/
 
+.courses-container{
+	align-self: center;
+}
+.course {
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 550px;
+	height: 200px;
+}
+
+.course h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+.course-preview {
+	background-image: url("../images/dsc-logo.svg");
+	background-size: cover;
+
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+	color: #fff;
+	padding: 30px;
+	width: 250px;
+	height: 200px;
+	 border-radius: 15px;
+}
+/* 
+.course-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+} */
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
 
 /* ================REsponsive********************* */
 
@@ -1335,5 +1390,41 @@ input, button {
 		justify-content: center;
 		text-align: center;
 	}
+.courses-container{
+	max-width: 350px;
+}
+	
+.course {
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 350px;
+	height: 150px;
+}
+
+.course h6 {
+	font-size: 10px;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+	font-size: 20px;
+}
+.course h5{
+	font-size: 15px;
+}
+.course-preview {
+	background-color: #2A265F;
+	color: #fff;
+	padding: 30px;
+	width: 250px;
+	height: 150px;
+	 border-radius: 15px;
+}
    
 }
