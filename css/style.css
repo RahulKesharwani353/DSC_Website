@@ -1124,7 +1124,7 @@ input, button {
     perspective: 1000;
 }
 .profile-card-2 {
-    max-width: 300px;
+    max-width: 330px;
 	height: 450px;
     background-color: #FFF;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
@@ -1142,7 +1142,7 @@ input, button {
 	height: 400px;
 	position: relative;
 	 */
-	 width: 300px;
+	 width: 330px;
 	 height: 450px;
 }
 
