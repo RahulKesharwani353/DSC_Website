@@ -180,7 +180,7 @@ nav .icon-burger .line {
 /*=========================home about===================*/
 .about{
 	width: 100%;
-	height: max-content;
+	height: 600px;
 	border-radius: 50px;
 	background: url(../images/home-abou-bg-lines.png) no-repeat 50% 50%;
 	background-size: cover;
@@ -208,9 +208,9 @@ p.about{
 
 
 #about-us-img{
-	height: 700px;
+	height: 50em;
 	position: relative;
-	top: -100px;
+	top: -15.7em;
 	
 }
 #join-us{
