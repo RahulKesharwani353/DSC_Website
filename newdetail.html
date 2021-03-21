@@ -1,245 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-     <script src="https://kit.fontawesome.com/c20cf1ee18.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./font/icofont/icofont.css" />
-    <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="shortcut icon" type="image/jpg" href="images/coding.png" />
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c20cf1ee18.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./font/icofont/icofont.css" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="shortcut icon" type="image/jpg" href="images/coding.png" />
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
   <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
 
-    <script src="./js/firebaseConfig.js"></script>
+  <script src="./js/firebaseConfig.js"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
-    <title>Developer Student Community</title>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
+  <title>Developer Student Community</title>
+</head>
 
-  <body>
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div
-          class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2"
-        >
-          <div class="card-form px-0 pt-4 pb-0 mt-3 mb-3">
-            <h2 id="heading">Complete Your Profile</h2>
-            <p>Fill all form field to go to next step</p>
-            <form id="msform">
-              <!-- progressbar -->
-              <ul id="progressbar">
-                <li class="active" id="personal"><strong>Personal</strong></li>
-                <li id="account"><strong>Academics</strong></li>
-                <li id="payment"><strong>Social Detail</strong></li>
-                <li id="confirm"><strong>Finish</strong></li>
-              </ul>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped progress-bar-animated"
-                  role="progressbar"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+<body>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+        <div class="card-form px-0 pt-4 pb-0 mt-3 mb-3">
+          <h2 id="heading">Complete Your Profile</h2>
+          <p>Fill all form field to go to next step</p>
+          <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+              <li class="active" id="personal"><strong>Personal</strong></li>
+              <li id="account"><strong>Academics</strong></li>
+              <li id="payment"><strong>Social Detail</strong></li>
+              <li id="confirm"><strong>Finish</strong></li>
+            </ul>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+            <br />
+            <!-- fieldsets -->
+            <fieldset>
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="fs-title">Personal Information:</h2>
+                  </div>
+                  <div class="col-5">
+                    <h2 class="steps">Step 1 - 4</h2>
+                  </div>
+                </div>
+                <label class="fieldlabels">First Name: *</label>
+                <input type="text" id="fname" placeholder="First Name" />
+                <label class="fieldlabels">Last Name: *</label>
+                <input type="text" id="lname" placeholder="Last Name" />
+                <label class="fieldlabels">Gender: *</label>
+                <select id="gender" name="gender">
+                  <option value="">Select Gender</option>
+                  <option value="male">male</option>
+                  <option value="female">female</option>
+                  <option value="others">others</option>
+                </select>
+                <br>
+                <label class="fieldlabels">Contact No.: *</label>
+                <input type="tel" maxlength="10" id="phno" placeholder="Contact No." />
+                <label class="fieldlabels">Alternate Contact No.: </label>
+                <input type="tel" maxlength="10" id="phno_2" placeholder="(optional)." />
+                <label class="fieldlabels">Country: *</label>
+                <input type="text" id="country" placeholder="Country" />
               </div>
-              <br />
-              <!-- fieldsets -->
-              <fieldset>
-                <div class="form-card">
-                    <div class="row">
-                      <div class="col-7">
-                        <h2 class="fs-title">Personal Information:</h2>
-                      </div>
-                      <div class="col-5">
-                        <h2 class="steps">Step 1 - 4</h2>
-                      </div>
-                    </div>
-                    <label class="fieldlabels">First Name: *</label>
-                    <input type="text" id="fname" placeholder="First Name" />
-                    <label class="fieldlabels">Last Name: *</label>
-                    <input type="text" id="lname" placeholder="Last Name" />
-                    <label class="fieldlabels">Gender: *</label>
-                    <select id="gender" name="gender">
-                      <option value="">Select Gender</option>
-                      <option value="male">male</option>
-                      <option value="female">female</option>
-                      <option value="others">others</option>
-                  </select>
-                  <br>
-                    <label class="fieldlabels">Contact No.: *</label>
-                    <input type="tel" maxlength="10" id="phno" placeholder="Contact No." />
-                    <label class="fieldlabels">Alternate Contact No.: </label>
-                    <input
-                    type="tel"
-                    maxlength="10"
-                      id="phno_2"
-                      placeholder="(optional)."
-                    />
-                    <label class="fieldlabels">Country: *</label>
-                  <input type="text" id="country" placeholder="Country" />
+
+              <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="fs-title">Account Information:</h2>
                   </div>
-                
-                <input
-                  type="button"
-                  name="next"
-                  class="next action-button"
-                  value="Next"
-                />
-              </fieldset>
-              <fieldset>
-            
-                <div class="form-card">
-                    <div class="row">
-                      <div class="col-7">
-                        <h2 class="fs-title">Account Information:</h2>
-                      </div>
-                      <div class="col-5">
-                        <h2 class="steps">Step 2 - 4</h2>
-                      </div>
-                    </div>
-                    <label class="fieldlabels">Course *</label>
-                    <input type="text" id="course" placeholder="(B.tech/B.E/BCA...)" required/>
-                    <label class="fieldlabels">Field: *</label>
-                    <input type="text" id="branch" placeholder="(CSE/IT/Mech...)" />
-                    <label class="fieldlabels">College / School: *</label>
-                    <input type="text" id="college" placeholder="College" />
-                    <label class="fieldlabels">Passing Year: *</label>
-                    <select id="passYear" name="passYear">
-                        <option value="">Select Year</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
-                        <option value="2028">2028</option>
-                        <option value="2029">2029</option>
-                        <option value="2030">2030</option>
-                    </select>
-                  </div>
-                <input
-                  type="button"
-                  name="next"
-                  class="next action-button"
-                  value="Next"
-                />
-                <input
-                  type="button"
-                  name="previous"
-                  class="previous action-button-previous"
-                  value="Previous"
-                />
-              </fieldset>
-              <fieldset>
-                <div class="form-card">
-                  <div class="row">
-                    <div class="col-7">
-                      <h2 class="fs-title">Image Upload:</h2>
-                    </div>
-                    <div class="col-5">
-                      <h2 class="steps">Step 3 - 4</h2>
-                    </div>
-                  </div>
-                  <label class="fieldlabels">Skills *</label>
-                  <input type="text" id="skill" placeholder="(JAVA, C++, Python...etc)" required/>
-                  <label class="fieldlabels">Bio *</label>
-                  <input type="text" id="bio" placeholder="About" required />
-                  <label class="fieldlabels">Github Profile *</label>
-                  <input type="text" id="github" placeholder="Github Username" required/>
-                  <label class="fieldlabels">LinkedIn Profile *</label>
-                  <input type="url" id="LinkedIn" placeholder="URL" required />
-                  <label class="fieldlabels">Discord UserName *</label>
-                  <input type="text" id="discord" placeholder="username#code (ex: User_name#4566)" required/>
-                  <p>Be Sure To<a href="https://discord.gg/2swNB74rZU" target="_blank">Join Discord Server*</a></p>
-                  <label class="fieldlabels">Twitter Profile</label>
-                  <input type="text" id="Twitter" placeholder="@username (optional)" />
-                </div>
-                <input
-                  type="button"
-                  name="next"
-                  class="submit next action-button"
-                  value="Submit"
-                  id="submit_btn"
-                />
-                <input
-                  type="button"
-                  name="previous"
-                  class="previous action-button-previous"
-                  value="Previous"
-                />
-              </fieldset>
-              <fieldset>
-                <div class="form-card">
-                  <div class="row">
-                    <div class="col-7">
-                      <h2 class="fs-title">Finish:</h2>
-                    </div>
-                    <div class="col-5">
-                      <h2 class="steps">Step 4 - 4</h2>
-                    </div>
-                  </div>
-                  <br /><br />
-                  <h2 class="purple-text text-center">
-                    <strong>SUCCESS !</strong>
-                  </h2>
-                  <br />
-                  <div class="row justify-content-center">Please Wait While Redirecting!!! Do Not Refresh The Page!!!
-                  </div>
-                  <div class="row justify-content-center">
-                    <div class="col-7 text-center">
-                      <h5 class="purple-text text-center">
-                        Congratulation You Successfully Become Our Member
-                      </h5>
-                    </div>
+                  <div class="col-5">
+                    <h2 class="steps">Step 2 - 4</h2>
                   </div>
                 </div>
-              </fieldset>
-            </form>
-          </div>
+                <label class="fieldlabels">Course *</label>
+                <input type="text" id="course" placeholder="(B.tech/B.E/BCA...)" required />
+                <label class="fieldlabels">Field: *</label>
+                <input type="text" id="branch" placeholder="(CSE/IT/Mech...)" />
+                <label class="fieldlabels">College / School: *</label>
+                <input type="text" id="college" placeholder="College" />
+                <label class="fieldlabels">Passing Year: *</label>
+                <select id="passYear" name="passYear">
+                  <option value="">Select Year</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                  <option value="2029">2029</option>
+                  <option value="2030">2030</option>
+                </select>
+              </div>
+              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            </fieldset>
+            <fieldset>
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="fs-title">Image Upload:</h2>
+                  </div>
+                  <div class="col-5">
+                    <h2 class="steps">Step 3 - 4</h2>
+                  </div>
+                </div>
+                <label class="fieldlabels">Skills *</label>
+                <input type="text" id="skill" placeholder="(JAVA, C++, Python...etc)" required />
+                <label class="fieldlabels">Bio *</label>
+                <input type="text" id="bio" placeholder="About" required />
+                <label class="fieldlabels">Github Profile *</label>
+                <input type="text" id="github" placeholder="Github Username" required />
+                <label class="fieldlabels">LinkedIn Profile *</label>
+                <input type="url" id="LinkedIn" placeholder="URL" required />
+                <label class="fieldlabels">Discord UserName *</label>
+                <input type="text" id="discord" placeholder="username#code (ex: User_name#4566)" required />
+                <p>Be Sure To<a href="https://discord.gg/2swNB74rZU" target="_blank">Join Discord Server*</a></p>
+                <label class="fieldlabels">Twitter Profile</label>
+                <input type="text" id="Twitter" placeholder="@username (optional)" />
+              </div>
+              <input type="button" name="next" class="submit next action-button" value="Submit" id="submit_btn" />
+              <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            </fieldset>
+            <fieldset>
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="fs-title">Finish:</h2>
+                  </div>
+                  <div class="col-5">
+                    <h2 class="steps">Step 4 - 4</h2>
+                  </div>
+                </div>
+                <br /><br />
+                <h2 class="purple-text text-center">
+                  <strong>SUCCESS !</strong>
+                </h2>
+                <br />
+                <div class="row justify-content-center">Please Wait While Redirecting!!! Do Not Refresh The Page!!!
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-7 text-center">
+                    <h5 class="purple-text text-center">
+                      Congratulation You Successfully Become Our Member
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- ====================Scripts================= -->
-    <script src="js/form.js"></script>
-    <script>
-        firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      // User is signed in.
-      var user = firebase.auth().currentUser;
-    } else {
-      // No user is signed in.
-      window.location.href = "joinus.html";
-    }
-  });
-    </script>
-    <script src="./js/profileDB.js"></script>
+  <!-- ====================Scripts================= -->
+  <script src="js/form.js"></script>
+  <script>
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        // User is signed in.
+        var user = firebase.auth().currentUser;
+      } else {
+        // No user is signed in.
+        window.location.href = "joinus.html";
+      }
+    });
+  </script>
+  <script src="./js/profileDB.js"></script>
 
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  </body>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</body>
+
 </html>

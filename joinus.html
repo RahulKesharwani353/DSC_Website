@@ -19,10 +19,7 @@
   <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
   <link rel="stylesheet" href="css/animate.css">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -63,9 +60,9 @@
           </div>
         </div>
         <div class="col-md-6">
-          
-            <img src="./images/male-faces.svg" class="text-center clipart">
-          
+
+          <img src="./images/male-faces.svg" class="text-center clipart">
+
         </div>
       </div>
       <div class="row">
@@ -73,102 +70,108 @@
           <div class="align-items-center join-header-content">
             <div class="text-center ">
               <a href="https://discord.gg/2swNB74rZU" target="_blank">
-                <button type="button" class="btn btn-danger btn-lg  wow animate__animated animate__fadeIn" id="join-us">Join
+                <button type="button" class="btn btn-danger btn-lg  wow animate__animated animate__fadeIn"
+                  id="join-us">Join
                   Us</button>
               </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
   <!-- END Cover -->
 
 
 
 
-<!-- ***********************************************SIGN IN***************************************************************** -->
+  <!-- ***********************************************SIGN IN***************************************************************** -->
 
 
-<!-- ***************************************************************SIGN UP************************************************************ -->
+  <!-- ***************************************************************SIGN UP************************************************************ -->
 
-<div class="container">
-  <div class="row py-5 mt-4 align-items-center">
- 
+  <div class="container">
+    <div class="row py-5 mt-4 align-items-center">
+
       <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
-          <img src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg" alt="" class="img-fluid mb-3 d-none d-md-block">    
+        <img src="https://res.cloudinary.com/mhmd/image/upload/v1569543678/form_d9sh6m.svg" alt=""
+          class="img-fluid mb-3 d-none d-md-block">
       </div>
-      <div class="col-md-7 col-lg-6" id ="signUpForm">
+      <div class="col-md-7 col-lg-6" id="signUpForm">
         <div class="login d-flex align-items-center py-5">
           <div class="container">
             <div class="row">
               <div class="col-md-9 col-lg-8 mx-auto">
                 <h3 class="login-heading mb-4">Become Member!</h3>
-             
-                  <div class="form-label-group">
-                    <input type="email" id="signUpEmail" class="form-control" placeholder="Email address" required autofocus>
-                    <label for="signUpEmail">Email *</label>
-                  </div>
-  
-                  <div class="form-label-group">
-                    <input type="password" id="signUpPassword" class="form-control" placeholder="Password" required>
-                    <label for="signUpPassword">Password *</label>
-                  </div>
 
-                  <div class="form-label-group">
-                    <input type="password" id="confirmInputPassword" class="form-control" placeholder="Password" required>
-                    <label for="confirmInputPassword">Confirm Password *</label>
-                  </div>
-                  
-                  <!-- <div class="form-label-group">
+                <div class="form-label-group">
+                  <input type="email" id="signUpEmail" class="form-control" placeholder="Email address" required
+                    autofocus>
+                  <label for="signUpEmail">Email *</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" id="signUpPassword" class="form-control" placeholder="Password" required>
+                  <label for="signUpPassword">Password *</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" id="confirmInputPassword" class="form-control" placeholder="Password" required>
+                  <label for="confirmInputPassword">Confirm Password *</label>
+                </div>
+
+                <!-- <div class="form-label-group">
                     <select id="gender" name="jobtitle" class="form-control" required>
                       <option value="">Gender</option>
                       <option value="Male">Male</option>
                       <option value="Female">Female</option>
                   </select>
                   </div> -->
-                  <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit" id="signUp" onclick="signUp()">Sign up </button>
-                  <div class="align-content-end">Already A Member 
-                    <a  class="small" id="switchToSignIn">Sign in</a></div>
-                  </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-7 col-lg-6" id ="signInForm">
-        <div class="login d-flex align-items-center py-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-9 col-lg-8 mx-auto">
-                <h3 class="login-heading mb-4">Welcome Back!</h3>
-                
-                  
-                  
-                  <div class="form-label-group">
-                    <input type="email" id="signInEmail" class="form-control" placeholder="email" required>
-                    <label for="signInEmail">Email *</label>
-                  </div>
-  
-                  <div class="form-label-group">
-                    <input type="password" id="signInPassword" class="form-control" placeholder="password" required>
-                    <label for="signInPassword">Password *</label>
-                  </div>
-
-                  <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
-                   id="signIn">
-                    Sign In </button>
-                  <div class="align-content-end">Not a member yet?  
-                    <a  class="small" id="switchToSignUp">Become Member</a></div>
-                
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+                  type="submit" id="signUp" onclick="signUp()">Sign up </button>
+                <div class="align-content-end">Already A Member
+                  <a class="small" id="switchToSignIn">Sign in</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      <div class="col-md-7 col-lg-6" id="signInForm">
+        <div class="login d-flex align-items-center py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 col-lg-8 mx-auto">
+                <h3 class="login-heading mb-4">Welcome Back!</h3>
+
+
+
+                <div class="form-label-group">
+                  <input type="email" id="signInEmail" class="form-control" placeholder="email" required>
+                  <label for="signInEmail">Email *</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" id="signInPassword" class="form-control" placeholder="password" required>
+                  <label for="signInPassword">Password *</label>
+                </div>
+
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+                  id="signIn">
+                  Sign In </button>
+                <div class="align-content-end">Not a member yet?
+                  <a class="small" id="switchToSignUp">Become Member</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
-</div>
-</div>
+  </div>
 
 
   <!-- ====================Scripts================= -->
@@ -178,77 +181,76 @@
   <script src="./js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script>
-    document.getElementById("switchToSignIn").onclick = function(){
-       document.getElementById("signUpForm").style.display="none";
-       document.getElementById("signInForm").style.display="block";
+    document.getElementById("switchToSignIn").onclick = function () {
+      document.getElementById("signUpForm").style.display = "none";
+      document.getElementById("signInForm").style.display = "block";
     }
-    document.getElementById("switchToSignUp").onclick = function(){
-       document.getElementById("signInForm").style.display="none";
-       document.getElementById("signUpForm").style.display="block";
+    document.getElementById("switchToSignUp").onclick = function () {
+      document.getElementById("signInForm").style.display = "none";
+      document.getElementById("signUpForm").style.display = "block";
     }
-  
+
   </script>
-  
-<!-- 
+
+  <!-- 
 ***********Firebase *************** -->
 
-<script src="./js/firebaseConfig.js"></script>  
+  <script src="./js/firebaseConfig.js"></script>
 
-<script src="./js/auth.js"></script>
-<script>
-  
-  var check =0;
-  function signUp(){
-    check =1;
-  var email = document.getElementById("signUpEmail").value;
-  var password = document.getElementById("signUpPassword").value;
-  var confirmPass = document.getElementById("confirmInputPassword").value;
-  // var gn = document.getElementById("gender").value;
+  <script src="./js/auth.js"></script>
+  <script>
 
-  if (email==""|| password=="") {
-    alert("please enter all the detail");
-  } else if(password!=confirmPass){
-    alert("Password and Confirm Password not matches");
-  }
-  else
-  {
-    firebase.auth().createUserWithEmailAndPassword(email, password)
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // ..
+    var check = 0;
+    function signUp() {
+      check = 1;
+      var email = document.getElementById("signUpEmail").value;
+      var password = document.getElementById("signUpPassword").value;
+      var confirmPass = document.getElementById("confirmInputPassword").value;
+      // var gn = document.getElementById("gender").value;
 
-  });
-  
-  }
-  }
-
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      // User is signed in.
-  
-      
-      var user = firebase.auth().currentUser;
-      // var UID = firebase.auth().currentUser.uid;
-      if(user != null){
-        if(check==1){
-          window.location.href = "newdetail.html";
-          
-        }
-        else
-        window.location.href = "profile.html";
+      if (email == "" || password == "") {
+        alert("please enter all the detail");
+      } else if (password != confirmPass) {
+        alert("Password and Confirm Password not matches");
       }
-  
-    } else {
-      // No user is signed in.
-      
+      else {
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+          .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // ..
+
+          });
+
+      }
     }
-  });
-  
-</script>
-<script type="text/javascript" src="./js/wow.min.js"></script>
+
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        // User is signed in.
+
+
+        var user = firebase.auth().currentUser;
+        // var UID = firebase.auth().currentUser.uid;
+        if (user != null) {
+          if (check == 1) {
+            window.location.href = "newdetail.html";
+
+          }
+          else
+            window.location.href = "profile.html";
+        }
+
+      } else {
+        // No user is signed in.
+
+      }
+    });
+
+  </script>
+  <script type="text/javascript" src="./js/wow.min.js"></script>
   <script type="text/javascript" src="./js/wow.js"></script>
-  <script >
+  <script>
     new WOW().init();
   </script>
 
