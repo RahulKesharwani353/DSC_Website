@@ -1578,4 +1578,32 @@ input, button {
 	}
 }
    
+#about1 p {
+	text-align: justify;
+	align-items: center;
+	margin: 0px 10% 10% 10% ;
+	color:#464646;
+}
+
+#about2 p {
+	text-align: justify;
+	align-items: center;
+	margin: 0px 10% 10% 10% ;
+	color:#464646;
+}
+
+#about1 .heading, #about2 .heading{
+	font-size: 36px;
+	}
+
+#about1 .heading {
+	float: none;
+	text-align: center;
+}	
+
+#about2 .heading{
+	float: none;
+	text-align: center;
+}
+
 }
