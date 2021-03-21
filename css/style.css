@@ -224,6 +224,11 @@ width:200px;
 position: relative;
 left: -38%;
 top: 25px;
+transition: ease .6s ;
+}
+#join-us:hover{
+	box-shadow: inset 200px 0 0 0 #ef4b79;
+
 }
 
 
@@ -605,6 +610,8 @@ a {
 	position: relative;
 	top: -60px;
 }
+
+
 /*-------------------------------------END ABOUT------------------------------------*/
 
 
@@ -1491,6 +1498,7 @@ input, button {
 		left: auto;
 		top: auto;
 	}
+
 	.about{
 		width: 100%;
 		height: max-content;
