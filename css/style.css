@@ -363,7 +363,7 @@ a {
 }
 
 .card-help {
-	font-family: 'Heebo';
+	font-family: 'sans-serif';
 	--bg-filter-opacity: 0.3;
 	background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
 	height: 380px;
@@ -537,9 +537,8 @@ a {
 
 /***************************************ABOUT*************************************/
 .aboutImg{
-	height: auto;
-
-	align-content: center;
+	height: 300px;
+		align-content: center;
 	padding: 10%;
 	vertical-align: middle;
 	background-size: cover;
@@ -564,6 +563,12 @@ a {
 	font-size: 150px;
 	align-items: center;
 	position: relative;
+	
+}
+
+.about-page-text{
+	text-align: justify;
+	margin: 0px 150px 10px 20px ;
 	
 }
 
