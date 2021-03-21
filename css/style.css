@@ -1172,12 +1172,13 @@ input, button {
     left: 30px;
     color: #FFF;
     font-size: 13px;
+	font-weight: bold;
     transition: all linear 0.25s;
 }
 
 .profile-card-2 .profile-icons .fa {
     margin: 5px;
-	color: rgba(239,75,121,1);
+	color: #0e8fd4;
 	font-size: 30px;
 }
 
@@ -1188,6 +1189,7 @@ input, button {
 
 .profile-card-2:hover .profile-name {
     bottom: 80px;
+	color: rgba(239,75,121,1);
 }
 
 .profile-card-2:hover .profile-username {
@@ -1446,13 +1448,16 @@ input, button {
 	height: 150px;
 	 border-radius: 15px;
 }
+.marquee--inner {
+	animation: marquee 60s linear infinite;
+}
 @keyframes marquee {
 	0% {
 		left: 0;
 	}
 
 	100% {
-		left: -300%;
+		left: -800%;
 	}
 }
    
