@@ -566,12 +566,45 @@ a {
 	
 }
 
-.about-page-text{
+
+#about1 p {
 	text-align: justify;
 	margin: 0px 150px 10px 20px ;
-	
+	font-weight: bold;
+	font-size:20px;
+	color:#464646;
 }
 
+#about2 p {
+	text-align: justify;
+	margin: 0px 20px 10px 150px ;
+	font-weight: bold;
+	font-size:20px;
+	color:#464646
+}
+
+#about1 .heading, #about2 .heading{
+	font-size: 36px;
+	}
+
+#about1 .heading {
+	float: left
+}	
+
+#about2 .heading{
+	float: right;
+}
+
+#about1 img{
+	width: 600px;
+	position: relative;
+	top: -60px;
+}
+#about2 img{
+	width: 600px;
+	position: relative;
+	top: -60px;
+}
 /*-------------------------------------END ABOUT------------------------------------*/
 
 
