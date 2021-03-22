@@ -1427,7 +1427,7 @@ input, button {
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-
+	margin-top: -70px;
 	background: #fff
 	url('../assets/loader.svg')
 	 no-repeat center center;	
