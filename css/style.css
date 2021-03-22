@@ -107,7 +107,7 @@ nav .icon-burger .line {
 /*==============Nav Bar end=========*/
 
 .header-bg-img {
-    background:url(../images/home-bg.svg);
+    background:url(../images/home-bg.png);
     position: relative;
     background-position:center;
 	background-size: cover;
