@@ -25,7 +25,8 @@
   <title>Developer Student Community</title>
 </head>
 
-<body>
+<body onload="preLoader()">
+  <div id="loading"></div>
   <!-- -------------------------------------------------------NAV BAR-------------------------------------- -->
   <nav>
     <input id="nav-toggle" type="checkbox">
@@ -477,6 +478,19 @@
   <script>
     new WOW().init();
   </script>
+  <script>
+		// $(document).ready(function(){
+			// 	$('div#loading').removeAttr('id');
+		// });
+		var preloader = document.getElementById("loading");
+		// window.addEventListener('load', function(){
+		// 	preloader.style.display = 'none';
+		// 	})
+
+		function preLoader(){
+			preloader.style.display = 'none';
+		};
+	</script>
 </body>
 
 </html>
