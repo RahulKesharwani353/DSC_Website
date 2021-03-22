@@ -742,9 +742,10 @@ width: 10%;
     transform: scale(1.2);
     transition: all 0.3s linear 0s;
 }
+
 .our-team:hover .social{
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1.2);
 }
 .our-team .social li{
     display: inline-block;
@@ -760,6 +761,7 @@ width: 10%;
     font-size: 14px;
     color: #EF4B79;
     transition: all 0.3s linear 0s;
+	text-decoration: none;
 }
 .our-team .social li a:hover{
     background: #EF4B79;
