@@ -107,7 +107,7 @@ nav .icon-burger .line {
 /*==============Nav Bar end=========*/
 
 .header-bg-img {
-    background:url(../images/home-bg.png);
+    background:url(../images/home-bg.svg);
     position: relative;
     background-position:center;
 	background-size: cover;
@@ -685,17 +685,17 @@ width: 10%;
     left: 0;
     transition: all 0.3s linear 0s;
 }
-.our-team:before{
+/* .our-team:before{
     background: #0ac0de;
     transform: scale(0);
     z-index: 1;
-}
+} */
 .our-team:hover:before{
     transform: scale(1);
 }
-.our-team:after{
+/* .our-team:after{
     background: #d4d4d4;
-}
+} */
 .our-team .pic{
     border-radius: 50%;
     overflow: hidden;
