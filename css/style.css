@@ -1427,10 +1427,11 @@ input, button {
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	margin-top: -70px;
+	margin-top: -60px;
 	background: #fff
-	url('../assets/loader.svg')
-	 no-repeat center center;	
+	url('../assets/pre.gif')
+	 no-repeat center center;
+	 background-size: 20vh;	
 	z-index: 99999;
 }
 
