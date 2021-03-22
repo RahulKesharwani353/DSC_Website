@@ -618,7 +618,7 @@ a {
 /*-------------------------------------Collabs and community------------------------------------*/
 
 .scroll-logo {
-	width: 150px;
+	/* width: 150px; */
 	height: 150px;
 	display: inline-block;
 	margin: 0px 40px;
@@ -1576,7 +1576,7 @@ input, button {
 	 border-radius: 15px;
 }
 .marquee--inner {
-	animation: marquee 60s linear infinite;
+	animation: marquee 50s linear infinite;
 }
 @keyframes marquee {
 	0% {
@@ -1584,7 +1584,7 @@ input, button {
 	}
 
 	100% {
-		left: -800%;
+		left: -500%;
 	}
 }
    
