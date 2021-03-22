@@ -1339,6 +1339,9 @@ input, button {
 .courses-container{
 	align-self: center;
 }
+.courses-container a{
+	text-decoration: none;
+}
 .course {
 	background-color: #fff;
 	border-radius: 15px;
@@ -1349,6 +1352,14 @@ input, button {
 	overflow: hidden;
 	width: 550px;
 	height: 200px;
+}
+
+.course:hover{
+	transform: scale(1.05);
+	filter: var(--background-color);
+	background-color: #0e8fd4;
+	color: white;
+	transition: all 0.3s linear 0s;
 }
 
 .course h6 {
